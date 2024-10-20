@@ -15,7 +15,7 @@
             $_SESSION['login'] = true;
             $_SESSION['nome'] = $user['usuario'];
             $_SESSION['cod'] = $user['codUser'];
-            $_SESSION['foto'] = $user['imgUser'];
+            // $_SESSION['foto'] = $user['imgUser'];
             $target = "location:cadastro.php";
         }else{
             $msg = "Email ou senha incorretos!";
