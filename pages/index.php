@@ -10,5 +10,11 @@
     <?php 
         require("navbar.php");
     ?>
+    <div class="main">
+        <div class="banner">
+            <img src="../images/banner3.png" alt="">
+        </div>
+    </div>
+    
 </body>
 </html>

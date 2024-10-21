@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    $userName = $_SESSION['nome'];
+    @$userName = $_SESSION['nome'];
 ?>
 <div class="header">
     <div class="navbar">
@@ -11,10 +11,19 @@
             <input type="text" placeholder="Procure aqui o seu próximo Funko!">
         </div>
         <div class="perfil">
-            <a href="">
-                <img src="../images/Perfil.png" alt="">
-                <p>Olá, <?php echo $userName;?></p>
-            </a>
+            <?php if(@$_SESSION['login'] == true){
+                echo"<a href=>
+                    <img src=../images/Perfil.png alt=>
+                    <p>Olá, $userName</p>
+                    </a> ";
+                }else{
+                    echo"<a href=login.php>
+                    <img src=../images/Perfil2.png alt=>
+                    <p>Olá! <strong>Entre</strong>,<br> ou <strong>Cadastre-se</strong></p>
+                    </a> ";
+                }
+                ?>
+            
         </div>
     </div>
     <div class="subNavbar">
@@ -24,6 +33,7 @@
             <a href=""><li>Jogos</li></a>
             <a href=""><li>Séries</li></a>
             <a href=""><li>Filmes</li></a>
+            <a href=""><li>Diversos</li></a>
             <a href=""><li>Lançamentos</li></a>
         </ul>
     </div>
