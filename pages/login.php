@@ -15,11 +15,9 @@
             <form action="login.act.php" enctype="multipart/form-data" method="post">
               
                 <p>Email:</p>
-                <p><input type="email" placeholder="Exemplo@xxxx.com" name="senhaUser"></p>
-                <!-- <p>Usuário:</p>
-                <p><input type="text" placeholder="usuário" name="user"></p> -->
-                <p>Senha:</p>
-                <p><input type="password" placeholder="Senha" name="password"></p>
+                <p><input type="email" placeholder="Exemplo@xxxx.com" name="email" required></p>
+              
+                <p><input type="password" placeholder="Senha" name="senhaUser" required></p>
                 <input type="submit">
                
             </form>

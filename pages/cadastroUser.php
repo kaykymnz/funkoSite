@@ -12,14 +12,14 @@
             <img src="../images/funkoLog2.png" alt="">
         </div>
         <div class="loginBodyCad">
-            <form action="login.act.php" enctype="multipart/form-data" method="post">
+            <form action="cadastroUser.act.php" enctype="multipart/form-data" method="post">
                 <h3>Seja bem vindo à melhor loja de Funkos do Brasil!</h3>
                 <p>Email:</p>
-                <p><input type="email" placeholder="Exemplo@xxxx.com" name="senhaUser"></p>
+                <p><input type="email" placeholder="Exemplo@xxxx.com" name="email" required></p>
                 <p>Usuário:</p>
-                <p><input type="text" placeholder="Usuário" name="user"></p>
+                <p><input type="text" placeholder="Usuário" name="user" required></p>
                 <p>Senha:</p>
-                <p><input type="password" placeholder="Senha" name="password"></p>
+                <p><input type="password" placeholder="Senha" name="senha" required></p>
                 
                 <p><input type="submit" value="Cadastrar-se"></p>
 

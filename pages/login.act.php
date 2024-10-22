@@ -1,24 +1,25 @@
 <?php
+   
     extract($_POST);
     extract($_FILES);
-    // $password = md5($password);
- 
+    $senhaUser = md5($senhaUser);
+    // var_dump($senhaUser);
     require('connect.php');
-
-    $busca = mysqli_query($con, "SELECT * FROM `userprod` WHERE `usuario` = '$user'");
+  
+    $busca = mysqli_query($con, "SELECT * FROM `users` WHERE `emailUser` = '$email'");
     session_start();
     
     if($busca->num_rows ==1){
             $user = mysqli_fetch_array($busca);
-        if($password === $user['senha']){
-            var_dump($password);
+        if($senhaUser === $user['senhaUser']){
+
             $_SESSION['login'] = true;
-            $_SESSION['nome'] = $user['usuario'];
+            $_SESSION['nome'] = $user['nomeUser'];
             $_SESSION['cod'] = $user['codUser'];
             // $_SESSION['foto'] = $user['imgUser'];
-            $target = "location:cadastro.php";
+            $target = "location:index.php";
         }else{
-            $msg = "Email ou senha incorretos!";
+            $msg = "Email ou senha incorretos!1";
             $target = "location:login.php";
         }
 
@@ -27,6 +28,6 @@
         $target = "location:login.php";
     }
     $_SESSION['msg'] = $msg;
-    echo $msg;
+    // echo $msg;
     header($target);
 ?>
