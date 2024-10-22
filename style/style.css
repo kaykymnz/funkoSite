@@ -98,4 +98,107 @@
 }
 .main .banner img {
   max-width: 90%;
+}
+
+.loginAll {
+  display: flex;
+  flex-direction: column;
+}
+.loginAll .navbarLogin {
+  width: 100%;
+}
+.loginAll .navbarLogin img {
+  max-width: 120px;
+}
+
+.loginAllCad {
+  display: flex;
+  flex-direction: column;
+}
+.loginAllCad .navbarLoginCad {
+  width: 100%;
+}
+.loginAllCad .navbarLoginCad img {
+  max-width: 110px;
+}
+.loginAllCad .loginBodyCad {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+.loginAllCad .loginBodyCad > form {
+  margin-top: -40px;
+  padding: 40px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #739ab9;
+  border-radius: 10px;
+  box-shadow: 10px 9px 32px -4px rgba(0, 0, 0, 0.12);
+}
+.loginAllCad .loginBodyCad > form h3 {
+  color: rgb(71, 71, 71);
+  margin-bottom: 30px;
+}
+.loginAllCad .loginBodyCad > form > p {
+  width: 100%;
+  display: flex;
+}
+.loginAllCad .loginBodyCad > form > p input {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 15px;
+  height: 32px;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+.loginAllCad .loginBodyCad > form > p input[type=submit] {
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: rgb(219, 0, 0);
+  color: white;
+  transition: 0.5s;
+  height: 38px;
+  font-size: 16px;
+}
+.loginAllCad .loginBodyCad > form > p input[type=submit]:hover {
+  background-color: rgb(255, 79, 79);
+}
+.loginAllCad .loginBodyCad > form :nth-child(9) {
+  display: flex;
+  align-items: center;
+}
+.loginAllCad .loginBodyCad > form :nth-child(9) .linha {
+  background-color: #739ab9;
+  width: 100%;
+  height: 1px;
+  margin: 20px 5px;
+  border-radius: 3px;
+}
+.loginAllCad .loginBodyCad > form .googleBtn {
+  display: flex;
+  border: solid 2px rgb(71, 71, 71);
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 5px;
+}
+.loginAllCad .loginBodyCad > form .googleBtn div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.loginAllCad .loginBodyCad > form .googleBtn img {
+  max-width: 20px;
+  max-height: 20px;
+  margin: 5px;
 }/*# sourceMappingURL=style.css.map */
