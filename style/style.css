@@ -201,4 +201,71 @@
   max-width: 20px;
   max-height: 20px;
   margin: 5px;
+}
+
+.allPerfil {
+  margin: 30px;
+  border-radius: 20px;
+  box-shadow: 10px 9px 32px -4px rgba(0, 0, 0, 0.368);
+  display: flex;
+  font-family: "Lato", sans-serif;
+}
+.allPerfil .esquerdaPerfil {
+  border-right: solid 2px rgb(71, 71, 71);
+  padding: 50px;
+}
+.allPerfil .esquerdaPerfil .perfilImg {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.allPerfil .esquerdaPerfil .perfilImg .nomePerfil {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.allPerfil .esquerdaPerfil .perfilImg img {
+  max-width: 130px;
+  background-color: #a01717;
+  border-radius: 100%;
+  border: solid 2px rgb(71, 71, 71);
+  margin-bottom: 15px;
+}
+.allPerfil .esquerdaPerfil .colunaInfsEsq ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  gap: 40px;
+}
+.allPerfil .esquerdaPerfil .colunaInfsEsq ul li {
+  list-style: none;
+  height: 40px;
+  font-size: 18px;
+  border-left: solid 1px rgb(71, 71, 71);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 2px;
+}
+.allPerfil .esquerdaPerfil .colunaInfsEsq ul li a {
+  text-decoration: none;
+  color: #739ab9;
+}
+.allPerfil .direitaPerfil .bannerPerfil {
+  padding: 30px;
+}
+.allPerfil .direitaPerfil .bannerPerfil img {
+  max-width: 100%;
+}
+.allPerfil .direitaPerfil .infPerfil {
+  display: flex;
+  justify-content: space-between;
+}
+.allPerfil .direitaPerfil .infPerfil .infDir {
+  height: 100%;
+  justify-content: baseline;
+}
+.allPerfil .direitaPerfil .infPerfil .infDir img {
+  max-width: 200px;
 }/*# sourceMappingURL=style.css.map */

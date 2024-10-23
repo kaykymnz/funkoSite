@@ -12,8 +12,8 @@
         </div>
         <div class="perfil">
             <?php if(@$_SESSION['login'] == true){
-                echo"<a href=>
-                    <img src=../images/Perfil.png alt=>
+                echo"<a href=perfil.php>
+                    <img src=../images/Perfil2.png alt=>
                     <p>Olá, $userName</p>
                     </a> ";
                 }else{
