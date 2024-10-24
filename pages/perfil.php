@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/funkoLog.png">
     <title>Perfill</title>
 </head>
 <body>
@@ -15,7 +16,9 @@
     <div class="allPerfil">
         <div class="esquerdaPerfil">
             <div class="perfilImg">
-                <img src="../images/perfil2.png" alt="">
+                <div class="imgPerfil">
+                    <p>foto aq</p>
+                </div>
                 <div class="nomePerfil"><?php echo $_SESSION['nome'] ;?></div>
             </div>
             <div class="colunaInfsEsq">
@@ -35,6 +38,7 @@
                 <div class="infEsq">
                     <div class="atend">
                         <p>Atendimento ao Cliente</p>
+                        <p>Histórico de Funkos</p>
                     </div>
                 </div>
                 <div class="infDir">

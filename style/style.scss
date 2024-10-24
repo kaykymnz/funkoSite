@@ -137,12 +137,125 @@ $corEscura: rgb(71, 71, 71);
     .navbarLogin{
         width: 100%;
         img{
-            max-width: 120px;
+            max-width: 110px;
         }
+    }
+    .loginBody{
+        display: flex;
+        display: flex;
+        justify-content: center;
+        font-family: $fontPrimaria;
+        // margin-bottom: 10px;
+        // form:nth-child(8){
+        //     display: flex;
+        // }
+        >form{
+            margin-top: -40px;
+            padding: 40px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: $corSecundaria;
+            border-radius: 10px;
+            box-shadow: 10px 9px 32px -4px rgba(0,0,0,0.12);
+            :nth-child(6){
+                width: 100%;
+                text-align: end;
+                margin: 5px 20px 30px 2px;
+
+            }
+            h3{
+                color: rgb(71, 71, 71);
+                margin-bottom: 30px;
+            }
+           >p{
+            width: 100%;
+            display: flex;
+            a{
+                width: 100%;
+                display: flex;
+                text-decoration: none;
+                // margin-bottom: 10px;
+                input[type=button]{
+                    margin-top: 15px;
+                    cursor: pointer;
+                    background-color: rgb(219, 0, 0);
+                    color: white;
+                    transition: 0.5s;
+                    height: 38px;
+                    font-size: 16px;
+                }
+                input[type=button]:hover{
+                    background-color: rgb(255, 79, 79);
+                }
+            }
+            input{
+                width: 100%;
+                padding: 0;
+                margin-bottom: 15px ;
+                height: 32px;
+                border: none;
+                outline: none;
+                padding-left: 5px;
+                border-radius: 5px;
+                background-color: $background;
+            }
+            input[type=submit]{
+                margin-top: 15px;
+                cursor: pointer;
+                background-color: rgb(219, 0, 0);
+                color: white;
+                transition: 0.5s;
+                height: 38px;
+                font-size: 16px;
+            }
+            input[type=submit]:hover{
+                background-color: rgb(255, 79, 79);
+            }
+           }
+           .linha{
+            height: 2px;
+            background-color: $corSecundaria;
+            width: 100%;
+            margin: 0 10px;
+            border-radius: 2px;
+        }
+        .linhaAll{
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .googleBtn{
+            display: flex;
+            border: solid 2px $corEscura;;
+            justify-content: center;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            cursor: pointer;
+            height: 40px;
+            border-radius: 5px;
+            div{
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            img{
+                max-width: 20px;
+                max-height: 20px;
+                margin: 5px;
+            }
+
+        }
+        }
+
     }
  
 }
 
+//cadastrar-se
 .loginAllCad{
     display: flex;
     flex-direction: column;
@@ -265,9 +378,10 @@ $corEscura: rgb(71, 71, 71);
                 font-size: 18px;
                 margin-bottom: 40px;
             }
-            img{
-                max-width: 130px;
-                background-color: #a01717;
+            .imgPerfil{
+                width: 130px;
+                background-image: url(../images/perfil.png);
+                height: 130px;
                 border-radius: 100%;
                 border:solid 2px $corEscura;
                 margin-bottom: 15px;
