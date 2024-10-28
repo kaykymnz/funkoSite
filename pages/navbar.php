@@ -5,7 +5,7 @@
 <div class="header">
     <div class="navbar">
         <div class="logo">
-            <img src="../images/funkoLog.png" alt="">
+           <a href="../pages/index.php"> <img src="../images/funkoLog.png" alt=""></a>
         </div>
         <div class="pesquisa">
             <input type="text" placeholder="Procure aqui o seu próximo Funko!">

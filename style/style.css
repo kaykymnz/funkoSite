@@ -99,7 +99,7 @@
   justify-content: center;
 }
 .main .banner img {
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .loginAll {
@@ -379,16 +379,17 @@
 
 .allVitrine {
   align-items: center;
-  text-align: center;
   font-family: "Lato", sans-serif;
 }
 .allVitrine h1 {
   margin-top: 40px;
   margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
 }
 .allVitrine .vitrine {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .allVitrine .vitrine .vitrinePrds {
   display: flex;
@@ -397,14 +398,48 @@
   margin-left: 50px;
 }
 .allVitrine .vitrine .vitrinePrds .prd {
-  width: 200px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  height: 380px;
   margin: 30px 20px;
   padding: 5px;
   border-radius: 5px;
   box-shadow: 7px 15px 34px -17px rgba(0, 0, 0, 0.12);
+  justify-content: space-around;
+}
+.allVitrine .vitrine .vitrinePrds .prd :nth-child(1) {
+  width: 100%;
+}
+.allVitrine .vitrine .vitrinePrds .prd :nth-child(1) a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.allVitrine .vitrine .vitrinePrds .prd :nth-child(1) a img {
+  max-width: 130px;
+  height: 160px;
 }
 .allVitrine .vitrine .vitrinePrds .prd :nth-child(2) {
-  margin: 10px 0;
+  margin: 6px 0;
+}
+.allVitrine .vitrine .vitrinePrds .prd :nth-child(2) a {
+  color: #000000;
+}
+.allVitrine .vitrine .vitrinePrds .prd :nth-child(3) {
+  margin: 4px 0;
+  font-style: italic;
+}
+.allVitrine .vitrine .vitrinePrds .prd :nth-child(3) a {
+  text-decoration: line-through;
+  color: #6c6c6c;
+}
+.allVitrine .vitrine .vitrinePrds .prd :nth-child(4) {
+  margin: 4px 0;
+  font-size: 21px;
+}
+.allVitrine .vitrine .vitrinePrds .prd :nth-child(4) a {
+  color: #000000;
 }
 .allVitrine .vitrine .vitrinePrds .prd .comprarBtn {
   width: 100%;
@@ -416,6 +451,7 @@
   background-color: #a01717;
   color: rgb(245, 222, 179);
   cursor: pointer;
+  font-weight: bold;
 }
 .allVitrine .vitrine .vitrinePrds .prd .comprarBtn:hover {
   background-color: rgb(255, 43, 43);
@@ -430,17 +466,13 @@
   background-color: rgb(0, 165, 165);
   color: white;
   cursor: pointer;
+  font-weight: bold;
 }
 .allVitrine .vitrine .vitrinePrds .prd .favBtn:hover {
   background-color: rgb(30, 207, 207);
 }
 .allVitrine .vitrine .vitrinePrds .prd > p a {
   text-decoration: none;
-  color: black;
-}
-.allVitrine .vitrine .vitrinePrds .prd > p img {
-  max-width: 130px;
-  height: 130px;
 }
 .allVitrine .bannerVitrine img {
   max-width: 300px;

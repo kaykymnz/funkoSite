@@ -20,12 +20,15 @@
                         <div class="vitrinePrds">
 
             <?php
-                 $funkos = mysqli_query($con, "Select * from `produtofunko`");
+                 $funkos = mysqli_query($con, "Select * from `produtofunko` ORDER BY `codFunko` DESC");
         
                  while($funko=mysqli_fetch_array($funkos)){
+                    $valorSemDesconto = $funko['valorFunko']  + 50;
                     echo "  <div class=prd>
-                            <p><a href=><img src=$funko[imgFunko1]></a></a></p>
-                            <p><a href=>Funko POP! $funko[midiaFunko] - <br> $funko[nomeFunko] #$funko[numFunko] </a></p>
+                            <p><a href=><img src=$funko[imgFunko1]></a></p>
+                            <p><a href=>Funko POP! $funko[midiaFunko] - $funko[nomeFunko] <br> #$funko[numFunko] </a></p>
+                            <p><a href=> R$$valorSemDesconto,00 </a></p>
+                            <p><a href=>R$$funko[valorFunko],00 </a></p>
                             <p><a href=><input type=button value=Comprar class=comprarBtn></a></p>
                             <p><a href=><input type=button value=\"Adicionar aos Favoritos\" class=favBtn></a></p>
                             </div>
