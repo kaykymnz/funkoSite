@@ -2,7 +2,7 @@
 
 
 $corPrimaria: #a01717;
-$corSecundaria: #739ab9;
+$corSecundaria: rgb(245, 222, 179);;
 $fontPrimaria: 'Lato', sans-serif;
 $background: #f5f5f5;
 $corEscura: rgb(71, 71, 71);
@@ -20,7 +20,7 @@ $corEscura: rgb(71, 71, 71);
     .navbar{
         display: flex;
         justify-content: space-between;
-
+        flex-wrap: wrap;
         .logo{
             img{
                 max-width: 100px;
@@ -31,7 +31,7 @@ $corEscura: rgb(71, 71, 71);
             justify-content: center;
             align-items: center;
             input[type=text]{
-                width: 450px;
+                width: 550px;
                 height: 35px;
                 padding-left: 10px;
                 outline: none;
@@ -79,6 +79,7 @@ $corEscura: rgb(71, 71, 71);
         ul{
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             // height: 50px;
             align-items: center;
             padding: 0;
@@ -436,3 +437,91 @@ $corEscura: rgb(71, 71, 71);
         }
     }
 }
+
+
+//vitrine 
+
+.allVitrine{
+
+    // display: flex;
+    // padding: 30px;
+    align-items: center;
+    text-align: center;
+    font-family: $fontPrimaria;
+    h1{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .vitrine{
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+
+
+        .vitrinePrds{
+            // justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-left: 50px;
+            .prd{
+                width: 200px;
+                // background-color: #739ab9;
+                margin: 30px 20px;
+                padding: 5px;
+                border-radius: 5px;
+                box-shadow: 7px 15px 34px -17px rgba(0,0,0,0.12);
+                :nth-child(2){
+                    margin: 10px 0;
+                }
+    
+                .comprarBtn{
+                    width: 100%;
+                    margin: 5px 0;
+                    height: 35px;
+                    border-radius: 4px;
+                    border: none;
+                    transition: 0.3s;
+                    background-color: $corPrimaria;
+                    color: $corSecundaria;
+                    cursor: pointer;
+                }
+                .comprarBtn:hover{
+                    background-color: rgb(255, 43, 43);
+                }
+                .favBtn{
+                    width: 100%;
+                    margin: 5px 0;
+                    height: 35px;
+                    border-radius: 4px;
+                    border: none;
+                    transition: 0.3s;
+                    background-color: rgb(0, 165, 165);
+                    color: white;
+                    cursor: pointer;
+                }
+                .favBtn:hover{
+                    background-color: rgb(30, 207, 207);
+                }
+                >p{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                    img{
+                        max-width: 130px;
+                        height: 130px;
+                    }
+                }
+            }
+    
+        }
+    }
+    .bannerVitrine{
+        img{
+            max-width: 300px;
+        }
+    }
+
+}
+

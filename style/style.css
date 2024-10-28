@@ -11,6 +11,7 @@
 .header .navbar {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .header .navbar .logo img {
   max-width: 100px;
@@ -21,7 +22,7 @@
   align-items: center;
 }
 .header .navbar .pesquisa input[type=text] {
-  width: 450px;
+  width: 550px;
   height: 35px;
   padding-left: 10px;
   outline: none;
@@ -33,7 +34,7 @@
   transition: 0.3s;
 }
 .header .navbar .pesquisa input[type=text]:focus {
-  border-bottom: 3px solid #739ab9;
+  border-bottom: 3px solid rgb(245, 222, 179);
 }
 .header .navbar .perfil {
   display: flex;
@@ -55,14 +56,15 @@
   transition: 0.3s;
 }
 .header .navbar .perfil a:hover {
-  color: #739ab9;
+  color: rgb(245, 222, 179);
 }
 .header .navbar .perfil a:hover img {
-  border: solid 2px #739ab9;
+  border: solid 2px rgb(245, 222, 179);
 }
 .header .subNavbar ul {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   margin-top: 10px;
@@ -86,8 +88,8 @@
 }
 .header .subNavbar ul a li:hover {
   cursor: pointer;
-  border-top: 2px solid #739ab9;
-  color: #739ab9;
+  border-top: 2px solid rgb(245, 222, 179);
+  color: rgb(245, 222, 179);
 }
 
 .main .banner {
@@ -123,7 +125,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: #739ab9;
+  color: rgb(245, 222, 179);
   border-radius: 10px;
   box-shadow: 10px 9px 32px -4px rgba(0, 0, 0, 0.12);
 }
@@ -182,7 +184,7 @@
 }
 .loginAll .loginBody > form .linha {
   height: 2px;
-  background-color: #739ab9;
+  background-color: rgb(245, 222, 179);
   width: 100%;
   margin: 0 10px;
   border-radius: 2px;
@@ -238,7 +240,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: #739ab9;
+  color: rgb(245, 222, 179);
   border-radius: 10px;
   box-shadow: 10px 9px 32px -4px rgba(0, 0, 0, 0.12);
 }
@@ -373,4 +375,73 @@
 }
 .allPerfil .direitaPerfil .infPerfil .infDir img {
   max-width: 200px;
+}
+
+.allVitrine {
+  align-items: center;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+.allVitrine h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.allVitrine .vitrine {
+  display: flex;
+  justify-content: center;
+}
+.allVitrine .vitrine .vitrinePrds {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 50px;
+}
+.allVitrine .vitrine .vitrinePrds .prd {
+  width: 200px;
+  margin: 30px 20px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 7px 15px 34px -17px rgba(0, 0, 0, 0.12);
+}
+.allVitrine .vitrine .vitrinePrds .prd :nth-child(2) {
+  margin: 10px 0;
+}
+.allVitrine .vitrine .vitrinePrds .prd .comprarBtn {
+  width: 100%;
+  margin: 5px 0;
+  height: 35px;
+  border-radius: 4px;
+  border: none;
+  transition: 0.3s;
+  background-color: #a01717;
+  color: rgb(245, 222, 179);
+  cursor: pointer;
+}
+.allVitrine .vitrine .vitrinePrds .prd .comprarBtn:hover {
+  background-color: rgb(255, 43, 43);
+}
+.allVitrine .vitrine .vitrinePrds .prd .favBtn {
+  width: 100%;
+  margin: 5px 0;
+  height: 35px;
+  border-radius: 4px;
+  border: none;
+  transition: 0.3s;
+  background-color: rgb(0, 165, 165);
+  color: white;
+  cursor: pointer;
+}
+.allVitrine .vitrine .vitrinePrds .prd .favBtn:hover {
+  background-color: rgb(30, 207, 207);
+}
+.allVitrine .vitrine .vitrinePrds .prd > p a {
+  text-decoration: none;
+  color: black;
+}
+.allVitrine .vitrine .vitrinePrds .prd > p img {
+  max-width: 130px;
+  height: 130px;
+}
+.allVitrine .bannerVitrine img {
+  max-width: 300px;
 }/*# sourceMappingURL=style.css.map */

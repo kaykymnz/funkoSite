@@ -28,7 +28,7 @@
     </div>
     <div class="subNavbar">
         <ul>
-            <a href=""><li>Produtos</li></a>
+            <a href="vitrine.php"><li>Produtos</li></a>
             <a href=""><li>Animes</li></a>
             <a href=""><li>Jogos</li></a>
             <a href=""><li>Séries</li></a>
