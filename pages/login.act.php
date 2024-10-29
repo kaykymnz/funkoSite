@@ -15,6 +15,7 @@
 
             $_SESSION['login'] = true;
             $_SESSION['nome'] = $user['nomeUser'];
+            $_SESSION['email'] = $user['emailUser'];
             $_SESSION['cod'] = $user['codUser'];
             // $_SESSION['foto'] = $user['imgUser'];
             $target = "location:index.php";

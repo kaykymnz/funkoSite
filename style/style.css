@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   margin: 0;
@@ -34,7 +35,7 @@
   transition: 0.3s;
 }
 .header .navbar .pesquisa input[type=text]:focus {
-  border-bottom: 3px solid rgb(245, 222, 179);
+  border-bottom: 3px solid #f5deb3;
 }
 .header .navbar .perfil {
   display: flex;
@@ -56,10 +57,10 @@
   transition: 0.3s;
 }
 .header .navbar .perfil a:hover {
-  color: rgb(245, 222, 179);
+  color: #f5deb3;
 }
 .header .navbar .perfil a:hover img {
-  border: solid 2px rgb(245, 222, 179);
+  border: solid 2px #f5deb3;
 }
 .header .subNavbar ul {
   display: flex;
@@ -88,8 +89,8 @@
 }
 .header .subNavbar ul a li:hover {
   cursor: pointer;
-  border-top: 2px solid rgb(245, 222, 179);
-  color: rgb(245, 222, 179);
+  border-top: 2px solid #f5deb3;
+  color: #f5deb3;
 }
 
 .main .banner {
@@ -125,7 +126,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: rgb(245, 222, 179);
+  color: #f5deb3;
   border-radius: 10px;
   box-shadow: 10px 9px 32px -4px rgba(0, 0, 0, 0.12);
 }
@@ -184,7 +185,7 @@
 }
 .loginAll .loginBody > form .linha {
   height: 2px;
-  background-color: rgb(245, 222, 179);
+  background-color: #f5deb3;
   width: 100%;
   margin: 0 10px;
   border-radius: 2px;
@@ -240,7 +241,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: rgb(245, 222, 179);
+  color: #f5deb3;
   border-radius: 10px;
   box-shadow: 10px 9px 32px -4px rgba(0, 0, 0, 0.12);
 }
@@ -310,7 +311,7 @@
 }
 
 .allPerfil {
-  margin: 30px;
+  margin: 50px;
   border-radius: 20px;
   box-shadow: 10px 9px 32px -4px rgba(0, 0, 0, 0.368);
   display: flex;
@@ -318,7 +319,19 @@
 }
 .allPerfil .esquerdaPerfil {
   border-right: solid 2px rgb(71, 71, 71);
-  padding: 50px;
+  width: 500px;
+}
+.allPerfil .esquerdaPerfil > p {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.allPerfil .esquerdaPerfil > p img {
+  max-width: 50px;
+  transition: 0.3s;
+}
+.allPerfil .esquerdaPerfil > p img:hover {
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.26));
 }
 .allPerfil .esquerdaPerfil .perfilImg {
   padding: 20px;
@@ -328,15 +341,31 @@
 }
 .allPerfil .esquerdaPerfil .perfilImg .nomePerfil {
   font-size: 18px;
+}
+.allPerfil .esquerdaPerfil .perfilImg .emailPerfil {
+  font-size: 15px;
   margin-bottom: 40px;
+  color: #6c6c6c;
 }
 .allPerfil .esquerdaPerfil .perfilImg .imgPerfil {
   width: 130px;
-  background-image: url(../images/perfil.png);
   height: 130px;
+  background-image: url(../images/funkoZoro.png);
+  background-size: cover;
+  background-position: center;
   border-radius: 100%;
   border: solid 2px rgb(71, 71, 71);
   margin-bottom: 15px;
+}
+.allPerfil .esquerdaPerfil .perfilImg .imgPerfil img {
+  max-width: 130px;
+  border-radius: 100%;
+  display: none;
+}
+.allPerfil .esquerdaPerfil .perfilImg .imgPerfil:hover img {
+  display: block;
+  background-color: rgba(94, 94, 94, 0.3764705882);
+  cursor: pointer;
 }
 .allPerfil .esquerdaPerfil .colunaInfsEsq ul {
   display: flex;
@@ -344,20 +373,24 @@
   justify-content: center;
   padding: 0;
   gap: 40px;
+  padding: 50px;
 }
 .allPerfil .esquerdaPerfil .colunaInfsEsq ul li {
   list-style: none;
   height: 40px;
   font-size: 18px;
-  border-left: solid 1px rgb(71, 71, 71);
+  border-left: solid 1px #a01717;
   display: flex;
   align-items: center;
   padding-left: 10px;
-  border-radius: 2px;
 }
 .allPerfil .esquerdaPerfil .colunaInfsEsq ul li a {
   text-decoration: none;
-  color: #739ab9;
+  color: #f5deb3;
+  transition: 0.2s;
+}
+.allPerfil .esquerdaPerfil .colunaInfsEsq ul li a:hover {
+  margin-left: 5px;
 }
 .allPerfil .direitaPerfil .bannerPerfil {
   padding: 30px;
@@ -369,11 +402,69 @@
   display: flex;
   justify-content: space-between;
 }
+.allPerfil .direitaPerfil .infPerfil .infEsq {
+  padding-left: 30px;
+  /* Carrossel */
+  /* Card */
+  /* Botões de Navegação */
+}
+.allPerfil .direitaPerfil .infPerfil .infEsq > p {
+  width: 100%;
+  padding-left: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.allPerfil .direitaPerfil .infPerfil .infEsq .carousel-container {
+  position: relative;
+  width: 100%; /* Ajuste conforme necessário */
+  margin: auto;
+  overflow: hidden;
+}
+.allPerfil .direitaPerfil .infPerfil .infEsq .carousel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+.allPerfil .direitaPerfil .infPerfil .infEsq .card {
+  flex: 0 0 200px; /* Largura de cada card */
+  margin: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  box-shadow: 1px 7px 21px -5px rgba(0, 0, 0, 0.03);
+}
+.allPerfil .direitaPerfil .infPerfil .infEsq .card img {
+  max-width: 130px;
+  height: 160px;
+}
+.allPerfil .direitaPerfil .infPerfil .infEsq .carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #a01717;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 2;
+}
+.allPerfil .direitaPerfil .infPerfil .infEsq .left-btn {
+  left: 0;
+}
+.allPerfil .direitaPerfil .infPerfil .infEsq .right-btn {
+  right: 0;
+}
 .allPerfil .direitaPerfil .infPerfil .infDir {
   height: 100%;
   justify-content: baseline;
 }
 .allPerfil .direitaPerfil .infPerfil .infDir img {
+  margin-top: 70px;
   max-width: 200px;
 }
 
@@ -449,7 +540,7 @@
   border: none;
   transition: 0.3s;
   background-color: #a01717;
-  color: rgb(245, 222, 179);
+  color: #f5deb3;
   cursor: pointer;
   font-weight: bold;
 }

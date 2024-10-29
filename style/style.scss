@@ -2,7 +2,7 @@
 
 
 $corPrimaria: #a01717;
-$corSecundaria: rgb(245, 222, 179);;
+$corSecundaria: #f5deb3;
 $fontPrimaria: 'Lato', sans-serif;
 $background: #f5f5f5;
 $corEscura: rgb(71, 71, 71);
@@ -358,7 +358,7 @@ $corEscura: rgb(71, 71, 71);
 // estilo perfil
 
 .allPerfil{
-    margin: 30px;
+    margin: 50px;
     // height: 95vh;
     border-radius: 20px;
     box-shadow: 10px 9px 32px -4px rgba(0, 0, 0, 0.368);
@@ -368,8 +368,23 @@ $corEscura: rgb(71, 71, 71);
     // background-color: #a01717;
     .esquerdaPerfil{
             border-right: solid 2px $corEscura;
-            padding: 50px;
+            width: 500px;
+            // padding: 100px;
             // border-radius: 10px;
+            >p{
+                // background-color: #636363;
+                display: flex;
+                flex-direction: row;
+                margin-left: 10px;
+                img{
+                    max-width: 50px;
+                    transition: 0.3s;
+                    
+                }
+            }
+            >p img:hover{
+                filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.26));
+            }
         .perfilImg{
             padding: 20px;
             display: flex;
@@ -377,17 +392,40 @@ $corEscura: rgb(71, 71, 71);
             align-items: center;
             .nomePerfil{
                 font-size: 18px;
+                // margin-bottom: 40px;
+            }
+            .emailPerfil{
+                font-size: 15px;
                 margin-bottom: 40px;
+                color: #6c6c6c;
             }
             .imgPerfil{
                 width: 130px;
-                background-image: url(../images/perfil.png);
                 height: 130px;
+                background-image: url(../images/funkoZoro.png); 
+                background-size: cover; 
+                background-position: center; 
                 border-radius: 100%;
-                border:solid 2px $corEscura;
+                border: solid 2px $corEscura;
                 margin-bottom: 15px;
                 
+                
+                img{
+                    max-width: 130px;
+                    border-radius: 100%;
+                    display: none;
+                  
+
+                }
+                
             }
+            .imgPerfil:hover img{
+                display: block;
+                background-color: #5e5e5e60;
+                cursor: pointer;
+                
+            }
+
         }
         .colunaInfsEsq{
             ul{
@@ -396,19 +434,26 @@ $corEscura: rgb(71, 71, 71);
                 justify-content:  center;
                 padding: 0;
                 gap: 40px;
+                padding: 50px;
                 li{
                     list-style: none;
                     // border-top: solid 1px $corEscura;
                     height: 40px;
                     font-size: 18px;
-                    border-left: solid 1px $corEscura;
+                    border-left: solid 1px $corPrimaria;
                     display: flex;
                     align-items:  center;
                     padding-left: 10px;
-                    border-radius: 2px;
+                    // border-radius: 2px;
                     a{
                         text-decoration: none;
-                        color: #739ab9;
+                        color: $corSecundaria;
+                        transition: 0.2s;
+
+                    }
+                    a:hover{
+                        margin-left: 5px;
+                        // filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.088));
 
                     }
                 }
@@ -426,11 +471,79 @@ $corEscura: rgb(71, 71, 71);
         .infPerfil{
             display: flex;
             justify-content: space-between;
+            .infEsq{
+                padding-left: 30px;
+                >p{
+                    width: 100%;
+                    padding-left: 5px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                }
+                .carousel-container {
+                    position: relative;
+                    width: 100%; /* Ajuste conforme necessário */
+                    margin: auto;
+                    overflow: hidden;
+                  }
+                  
+                  /* Carrossel */
+                  .carousel {
+                    display: flex;
+                    transition: transform 0.4s ease-in-out;
+                  }
+                  
+                  /* Card */
+                  .card {
+                    flex: 0 0 200px; /* Largura de cada card */
+                    margin: 10px;
+                    // height: 150px;
+                    // background-color: #ddd;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.2em;
+                    // cursor: pointer;
+                    box-shadow: 1px 7px 21px -5px rgba(0,0,0,0.03);
+                    
+                    img{
+                        max-width: 130px;
+                        height: 160px;
+                        
+                    }
+                  }
+                  
+                  /* Botões de Navegação */
+                  .carousel-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: $corPrimaria;
+                    color: white;
+                    border-radius: 5px;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                    font-size: 24px;
+                    z-index: 2;
+                  }
+                  
+                  .left-btn {
+                    left: 0;
+                  }
+                  
+                  .right-btn {
+                    right: 0;
+                  }
+            }
             .infDir{
                 height: 100%;
                 // display: flex;
                 justify-content: baseline;
                 img{
+                    margin-top: 70px;
                     max-width: 200px;
                 }
             }
