@@ -13,7 +13,7 @@
     ?>
     <div class="main">
         <div class="banner">
-            <img src="../images/banner3.png" alt="">
+            <img src="../images/bannerIni.jpg" alt="">
         </div>
     </div>
     

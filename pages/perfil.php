@@ -71,6 +71,6 @@
         </div>
     </div>
 
-    <script src="../js/carousel.js"></script>
+    <script src="../scripts/carousel.js"></script>
 </body>
 </html>

@@ -93,14 +93,14 @@
   color: #f5deb3;
 }
 
+.main {
+  width: 100vw;
+}
 .main .banner {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .main .banner img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .loginAll {
@@ -567,4 +567,38 @@
 }
 .allVitrine .bannerVitrine img {
   max-width: 300px;
+}
+
+.allCompra {
+  display: flex;
+}
+.allCompra .imgsCompra {
+  display: flex;
+  height: 550px;
+  background-color: #ffffff;
+}
+.allCompra .imgsCompra .imgsEsq {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 10px 10px 10px 50px;
+  height: 500px;
+}
+.allCompra .imgsCompra .imgsEsq > img {
+  max-width: 80px;
+  padding: 7px;
+  margin: 13px 7px;
+  border: solid 2px #a01717;
+  border-radius: 4px;
+}
+.allCompra .imgsCompra .imgPrincipal {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  background-color: #ffffff;
+}
+.allCompra .imgsCompra .imgPrincipal img {
+  max-height: 450px;
+  padding: 10px;
+  border-radius: 4px;
 }/*# sourceMappingURL=style.css.map */

@@ -118,13 +118,14 @@ $corEscura: rgb(71, 71, 71);
 //estilo inicial
 .main{
     // background-color: $background;
+    width: 100vw;
     .banner{
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         img{
-            max-width: 100%;
+            width: 100%;
         }
     
     }
@@ -677,3 +678,43 @@ $corEscura: rgb(71, 71, 71);
 
 }
 
+.allCompra{
+    // padding: 70px 90px;
+    display: flex;
+    .imgsCompra{
+        display: flex;
+        height: 550px;
+        background-color: #ffffff;
+        .imgsEsq{
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            padding: 10px 10px 10px 50px;
+            height: 500px;
+            // justify-content: center;
+            >img{
+                max-width: 80px;
+                padding: 7px;
+                margin: 13px 7px;
+                border: solid 2px $corPrimaria;
+                border-radius: 4px;
+            }
+        }
+
+        .imgPrincipal{
+            // margin: 10px;
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            background-color: #ffffff;
+            img{
+                max-height: 450px;
+                padding: 10px;
+                // margin-top: 17px;
+                // border: solid 2px $corPrimaria;
+                border-radius: 4px;
+            }
+        }
+
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,12 +25,12 @@
                  while($funko=mysqli_fetch_array($funkos)){
                     $valorSemDesconto = $funko['valorFunko']  + 50;
                     echo "  <div class=prd>
-                            <p><a href=><img src=$funko[imgFunko1]></a></p>
-                            <p><a href=>Funko POP! $funko[midiaFunko] - $funko[nomeFunko] <br> #$funko[numFunko] </a></p>
-                            <p><a href=> R$$valorSemDesconto,00 </a></p>
-                            <p><a href=>R$$funko[valorFunko],00 </a></p>
-                            <p><a href=><input type=button value=Comprar class=comprarBtn></a></p>
-                            <p><a href=><input type=button value=\"Adicionar aos Favoritos\" class=favBtn></a></p>
+                                <p><a href=pagCompra.php?cod=$funko[codFunko]><img src=$funko[imgFunko1]></a></p>
+                                <p><a href=pagCompra.php?cod=$funko[codFunko]>Funko POP! $funko[midiaFunko] - $funko[nomeFunko] <br> #$funko[numFunko] </a></p>
+                                <p><a href=pagCompra.php?cod=$funko[codFunko]>R$$valorSemDesconto,00 </a></p>
+                                <p><a href=pagCompra.php?cod=$funko[codFunko]>R$$funko[valorFunko],00 </a></p>
+                                <p><a href=pagCompra.php?cod=$funko[codFunko]><input type=button value=Comprar class=comprarBtn></a></p>
+                                <p><a href=><input type=button value=\"Adicionar aos Favoritos\" class=favBtn></a></p>
                             </div>
                     ";
 
