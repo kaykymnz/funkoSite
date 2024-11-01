@@ -570,7 +570,12 @@
 }
 
 .allCompra {
+  padding-left: 90px;
+  padding-top: 70px;
   display: flex;
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+  justify-content: center;
 }
 .allCompra .imgsCompra {
   display: flex;
@@ -581,24 +586,106 @@
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  padding: 10px 10px 10px 50px;
   height: 500px;
+  justify-content: space-between;
+  padding-right: 10px;
 }
 .allCompra .imgsCompra .imgsEsq > img {
-  max-width: 80px;
+  max-width: 85px;
+  height: 100px;
   padding: 7px;
   margin: 13px 7px;
   border: solid 2px #a01717;
   border-radius: 4px;
+  box-shadow: 2px 6px 25px 2px rgba(0, 0, 0, 0.1);
 }
 .allCompra .imgsCompra .imgPrincipal {
   display: flex;
   justify-content: center;
   height: 500px;
   background-color: #ffffff;
+  align-items: center;
 }
 .allCompra .imgsCompra .imgPrincipal img {
   max-height: 450px;
   padding: 10px;
+  box-shadow: 2px 6px 25px 2px rgba(0, 0, 0, 0.1);
+  border: solid 2px #f5deb3;
   border-radius: 4px;
+}
+.allCompra .direitaCompra {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 70px;
+  justify-content: space-between;
+  height: 485px;
+}
+.allCompra .direitaCompra .titulo {
+  font-size: 28px;
+}
+.allCompra .direitaCompra .vendEntg {
+  display: flex;
+  margin-top: -30px;
+}
+.allCompra .direitaCompra .vendEntg :nth-child(2) {
+  margin: 0 8px;
+}
+.allCompra .direitaCompra .vendEntg :nth-child(3) {
+  color: #30fd71;
+  font-weight: bold;
+}
+.allCompra .direitaCompra .valorVenda :nth-child(1) {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #6c6c6c;
+  font-size: 20px;
+  margin-top: -20px;
+}
+.allCompra .direitaCompra .valorVenda :nth-child(2) {
+  font-size: 35px;
+  color: #a01717;
+  font-style: italic;
+}
+.allCompra .direitaCompra .infsAbaixoPreco {
+  margin-bottom: -50px;
+}
+.allCompra .direitaCompra .infsAbaixoPreco2 {
+  margin-bottom: -14px;
+}
+.allCompra .direitaCompra .opcPgmnt {
+  text-decoration: underline;
+  margin-bottom: -14px;
+}
+.allCompra .direitaCompra .btnsCompraFunko {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.allCompra .direitaCompra .btnsCompraFunko :nth-child(1) {
+  height: 50px;
+  width: 60%;
+  background-color: #f5deb3;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.allCompra .direitaCompra .btnsCompraFunko :nth-child(1):hover {
+  background-color: #e6c07a;
+}
+.allCompra .direitaCompra .btnsCompraFunko :nth-child(2) {
+  height: 50px;
+  width: 35%;
+  background-color: #f5deb3;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.allCompra .direitaCompra .btnsCompraFunko :nth-child(2):hover {
+  background-color: #e6c07a;
 }/*# sourceMappingURL=style.css.map */

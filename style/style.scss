@@ -678,9 +678,16 @@ $corEscura: rgb(71, 71, 71);
 
 }
 
+
 .allCompra{
     // padding: 70px 90px;
+    padding-left: 90px;
+    padding-top: 70px;
     display: flex;
+    font-family: $fontPrimaria;
+    background-color: #fff;
+    justify-content: center;
+    // z-index: 1;
     .imgsCompra{
         display: flex;
         height: 550px;
@@ -689,15 +696,18 @@ $corEscura: rgb(71, 71, 71);
             display: flex;
             flex-direction: column;
             background-color: #ffffff;
-            padding: 10px 10px 10px 50px;
+            // padding: 10px 10px 10px 50px;
             height: 500px;
-            // justify-content: center;
+            justify-content: space-between;
+            padding-right: 10px;
             >img{
-                max-width: 80px;
+                max-width: 85px;
+                height: 100px;
                 padding: 7px;
                 margin: 13px 7px;
                 border: solid 2px $corPrimaria;
                 border-radius: 4px;
+                box-shadow: 2px 6px 25px 2px rgba(0,0,0,0.1);
             }
         }
 
@@ -707,9 +717,14 @@ $corEscura: rgb(71, 71, 71);
             justify-content: center;
             height: 500px;
             background-color: #ffffff;
+            align-items: center;
+
             img{
                 max-height: 450px;
                 padding: 10px;
+                box-shadow: 2px 6px 25px 2px rgba(0,0,0,0.1);
+                border: solid 2px $corSecundaria;
+
                 // margin-top: 17px;
                 // border: solid 2px $corPrimaria;
                 border-radius: 4px;
@@ -717,4 +732,89 @@ $corEscura: rgb(71, 71, 71);
         }
 
     }
+    .direitaCompra{
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 70px;
+        justify-content: space-between;
+        height: 485px;
+        .titulo{
+            font-size: 28px;
+        }
+        .vendEntg{
+            display: flex;
+            margin-top: -30px;
+            // margin: 20px 0;
+            // justify-content: space-between;
+            :nth-child(2){
+                margin: 0 8px;
+            }
+            :nth-child(3){
+                color: #30fd71;
+                font-weight: bold;
+            }
+        }
+        .valorVenda{
+            :nth-child(1){
+                text-decoration: line-through;
+                font-style: italic;
+                color: #6c6c6c;
+                font-size: 20px;
+                margin-top: -20px;
+            }
+            :nth-child(2){
+                font-size: 35px;
+                // margin-top: -20px;
+                color: $corPrimaria;
+                font-style: italic;
+                // margin-top: 4px;
+                // margin-bottom: 16px;
+            }
+        }
+        .infsAbaixoPreco{
+            margin-bottom: -50px;
+        }.infsAbaixoPreco2{
+            // margin: 4px 0;
+            margin-bottom: -14px;
+        }
+        .opcPgmnt{
+            text-decoration: underline;
+            margin-bottom: -14px;
+            // margin: 4px 0;
+        }
+        .btnsCompraFunko{
+        width: 100%;
+        display: flex;
+        gap: 5px;
+            :nth-child(1){
+                height: 50px;
+                width: 60%;
+                background-color: $corSecundaria;
+                border: none;
+                border-radius: 8px;
+                font-size: 18px;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            :nth-child(1):hover{
+            background-color: #e6c07a;
+            }
+            :nth-child(2){
+                height: 50px;
+                width: 35%;
+                background-color: $corSecundaria;
+                border: none;
+                border-radius: 8px;
+                font-size: 18px;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            :nth-child(2):hover{
+            background-color: #e6c07a;
+            }
+        }
+    }
 }
+
